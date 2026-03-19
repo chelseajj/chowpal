@@ -87,7 +87,7 @@ function UploadStep({ onSubmit, processing, progress }) {
           <div style={{ fontSize: 48, marginBottom: 12 }}>📸</div>
           <div style={{ fontSize: 16, fontWeight: 700, color: "#fff", marginBottom: 4 }}>Upload Screenshot</div>
           <div style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}>大众点评 · 美团 · 小红书<br />Tap to select or take photo</div>
-          <input ref={fileRef} type="file" accept="image/*" capture="environment" onChange={e => handleFile(e.target.files[0])} style={{ display: "none" }} />
+          <input ref={fileRef} type="file" accept="image/*"environment="environment" onChange={e => handleFile(e.target.files[0])} style={{ display: "none" }} />
         </div>
       ) : (
         <div style={{ animation: "fadeUp 0.3s" }}>
